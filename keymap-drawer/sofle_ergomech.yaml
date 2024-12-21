@@ -1,6 +1,6 @@
 layers:
   default:
-  - '`'
+  - '&dtap_esc_bkquote'
   - '1'
   - '2'
   - '3'
@@ -48,8 +48,8 @@ layers:
   - '&dtap_dot'
   - '&dtap_slash'
   - {t: ESCAPE, h: RSHFT}
+  - LEFT GUI
   - CAPSLOCK
-  - LGUI
   - {t: art, h: toggle}
   - LCTRL
   - SPACE
@@ -59,7 +59,7 @@ layers:
   - RIGHT SHIFT
   - RALT
   - '&tap_l4_l5'
-  - MENU
+  - CAPS
   - RIGHT
   - UP ARROW
   - LEFT
@@ -85,9 +85,9 @@ layers:
   - C
   - ''
   - ''
-  - '7'
-  - '8'
-  - '9'
+  - KP 7
+  - KP 8
+  - KP 9
   - KP PLUS
   - LALT
   - Y
@@ -97,9 +97,9 @@ layers:
   - T
   - ''
   - ''
-  - '4'
-  - '5'
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - '&dtap_del'
   - L
   - U
@@ -109,9 +109,9 @@ layers:
   - LALT
   - ''
   - ''
-  - '1'
-  - '2'
-  - '3'
+  - KP 1
+  - KP 2
+  - KP 3
   - KP ENTER
   - HOME
   - KP 5
@@ -209,15 +209,15 @@ layers:
   - KP MINUS
   - TAB
   - ESC
-  - Ctl+ LEFT
+  - Alt+ LEFT
   - UP
-  - Ctl+ RIGHT
+  - Alt+ RIGHT
   - HOME
   - ''
   - ''
-  - '7'
-  - '8'
-  - '9'
+  - KP 7
+  - KP 8
+  - KP 9
   - KP PLUS
   - CAPS
   - LCTRL
@@ -227,21 +227,21 @@ layers:
   - END
   - ''
   - ''
-  - '4'
-  - '5'
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - '&dtap_del'
   - ''
   - LSHFT
   - PREV
-  - PP
+  - PLAY PAUSE
   - NEXT
   - APP
   - ''
   - ''
-  - '1'
-  - '2'
-  - '3'
+  - KP 1
+  - KP 2
+  - KP 3
   - KP ENTER
   - MUTE
   - ''
@@ -252,12 +252,12 @@ layers:
   - ''
   - {t: default, h: toggle}
   - ''
-  - '0'
-  - .
+  - KP 0
+  - KP 1
   - CAPS
-  - Alt+ RIGHT
+  - Ctl+ RIGHT
   - PG UP
-  - Alt+ LEFT
+  - Ctl+ LEFT
   - PG DN
   fnx:
   - F13
@@ -339,9 +339,9 @@ layers:
   - ''
   - ''
   - ''
-  - '7'
-  - '8'
-  - '9'
+  - KP 7
+  - KP 8
+  - KP 9
   - KP PLUS
   - ''
   - ''
@@ -351,9 +351,9 @@ layers:
   - ''
   - ''
   - ''
-  - '4'
-  - '5'
-  - '6'
+  - KP 4
+  - KP 5
+  - KP 6
   - '&dtap_del'
   - ''
   - ''
@@ -363,9 +363,9 @@ layers:
   - ''
   - ''
   - ''
-  - '1'
-  - '2'
-  - '3'
+  - KP 1
+  - KP 2
+  - KP 3
   - KP ENTER
   - ''
   - ''
@@ -375,7 +375,7 @@ layers:
   - ''
   - ''
   - ''
-  - '0'
+  - KP 0
   - KP DOT
   - KP EQUAL
   - ''
