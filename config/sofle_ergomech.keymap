@@ -15,14 +15,7 @@
 / {
     // Activate ADJUST layer by pressing raise and lower
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        adjust_layer {
-            if-layers = <1 2>;
-            then-layer = <3>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 
     combos {
         compatible = "zmk,combos";
@@ -30,11 +23,6 @@
         rsft_rspc_rctl {
             bindings = <&kp RIGHT_CONTROL>;
             key-positions = <54 55>;
-        };
-
-        rspc_rbkspc_del {
-            bindings = <&kp DELETE>;
-            key-positions = <53 54>;
         };
 
         lctl_bspc {
@@ -129,6 +117,15 @@
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp ESCAPE>;
         };
+
+        tap_ent_l3: tap_ent_l3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_ENT_L3";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER>, <&mo 3>;
+
+            tapping-term-ms = <150>;
+        };
     };
 
     keymap {
@@ -221,7 +218,7 @@
 &kp TAB     &kp ESC    &kp LA(LEFT)      &kp UP            &kp LA(RIGHT)  &kp HOME   &none     &none          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
 &kp CAPS    &kp LCTRL  &kp LEFT          &kp DOWN          &kp RIGHT      &kp END    &none     &none          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &dtap_del
 &none       &kp LSHFT  &kp C_PREV        &kp C_PLAY_PAUSE  &kp C_NEXT     &kp K_APP  &none     &none          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_ENTER
-&kp C_MUTE  &none      &none             &none             &none          &none      &none     &to 0          &none            &kp KP_NUMBER_0  &kp KP_NUMBER_1
+&kp C_MUTE  &none      &none             &to 0             &none          &trans     &none     &to 0          &none            &kp KP_NUMBER_0  &kp KP_NUMBER_1
                                                                                      &kp CAPS  &kp LC(RIGHT)  &kp PG_UP        &kp LC(LEFT)     &kp PG_DN
             >;
 
