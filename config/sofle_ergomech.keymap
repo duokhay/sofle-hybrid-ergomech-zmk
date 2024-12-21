@@ -27,6 +27,97 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        rsft_rspc_rctl {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <54 55>;
+        };
+
+        rspc_rbkspc_del {
+            bindings = <&kp DELETE>;
+            key-positions = <53 54>;
+        };
+
+        lctl_bspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <51 52>;
+        };
+
+        redo3tap {
+            bindings = <&kp LC(Y)>;
+            key-positions = <3 4>;
+        };
+    };
+
+    macros {
+        macro_shotapple: macro_shotapple {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_SHIFT &kp>,
+                <&macro_tap>,
+                <&kp NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT &kp>;
+
+            label = "MACRO_SHOTAPPLE";
+        };
+    };
+
+    behaviors {
+        dtap_comm: dtap_comm {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_COMM";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LEFT_BRACKET>;
+        };
+
+        dtap_dot: dtap_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_DOT";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&kp RIGHT_BRACKET>;
+        };
+
+        dtap_plus: dtap_plus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_PLUS";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp KP_MULTIPLY>;
+        };
+
+        dtap_minus: dtap_minus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_MINUS";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp SLASH>;
+        };
+
+        dtap_slash: dtap_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+        };
+
+        dtap_quote: dtap_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp SEMICOLON>;
+        };
+
+        dtap_del: dtap_del {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_DEL";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -41,15 +132,17 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE   &kp N1    &kp N2    &kp N3     &kp N4     &kp N5   &kp N6     &kp N7     &kp N8        &kp N9    &kp N0    &none
-&kp ESC     &kp Q     &kp W     &kp E      &kp R      &kp T    &kp Y      &kp U      &kp I         &kp O     &kp P     &kp BSPC
-&kp TAB     &kp A     &kp S     &kp D      &kp F      &kp G    &kp H      &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
-&kp LSHFT   &kp Z     &kp X     &kp C      &kp V      &kp B    &kp N      &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp RSHFT
-&kp C_MUTE  &kp LGUI  &kp LALT  &kp LCTRL  &mo LOWER  &kp RET  &kp SPACE  &mo RAISE  &kp RCTRL     &kp RALT  &kp RGUI
-                                                               &kp ENTER  &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
+&kp GRAVE       &kp N1    &kp N2  &kp N3     &kp N4     &kp N5       &kp N6         &kp N7     &kp N8           &kp N9     &kp N0       &dtap_plus
+&kp TAB         &kp Q     &kp W   &kp E      &kp R      &kp T        &kp Y          &kp U      &kp I            &kp O      &kp P        &dtap_minus
+&kp LEFT_SHIFT  &kp A     &kp S   &kp D      &kp F      &kp G        &kp H          &kp J      &kp K            &kp L      &dtap_quote  &kp ENTER
+&kp LEFT_ALT    &kp Z     &kp X   &kp C      &kp V      &kp B        &kp N          &kp M      &dtap_comm       &dtap_dot  &dtap_slash  &mt RSHFT ESCAPE
+&kp CAPSLOCK    &kp LGUI  &tog 1  &kp LCTRL  &kp SPACE  &lt 3 ENTER  &kp BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT  &kp RALT   &kp RGUI
+                                                                     &kp C_MENU     &kp RIGHT  &kp UP_ARROW     &kp LEFT   &kp DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_DN &inc_dec_kp PG_UP PG_UP>;
+            sensor-bindings =
+                <&inc_dec_kp C_AC_SCROLL_DOWN C_AC_SCROLL_UP>,
+                <&inc_dec_kp PG_UP PG_UP>;
         };
 
         lower_layer {
