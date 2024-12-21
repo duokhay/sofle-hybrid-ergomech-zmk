@@ -246,7 +246,7 @@ layers:
   - MUTE
   - ''
   - ''
-  - ''
+  - {t: default, h: toggle}
   - ''
   - {type: held}
   - ''
@@ -392,8 +392,6 @@ layers:
 combos:
 - p: [54, 55]
   k: RIGHT CONTROL
-- p: [53, 54]
-  k: DELETE
 - p: [51, 52]
   k: BACKSPACE
 - p: [3, 4]
