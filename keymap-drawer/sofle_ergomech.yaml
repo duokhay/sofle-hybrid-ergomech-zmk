@@ -1,19 +1,5 @@
 layers:
-  default: ['`', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '', ESC, Q, W, E, R, T, Y, U, I, O, P, BSPC, TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z,
-    X, C, V, B, N, M, ',', ., /, RSHFT, MUTE, LGUI, LALT, LCTRL, lower, RET, SPACE, raise, RCTRL, RALT, RGUI, ENTER, RIGHT, UP ARROW, LEFT, DOWN]
-  lower:
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
+  default:
   - '`'
   - '1'
   - '2'
@@ -25,30 +11,171 @@ layers:
   - '8'
   - '9'
   - '0'
-  - F12
+  - '&dtap_plus'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - '&dtap_minus'
+  - LEFT SHIFT
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - '&dtap_quote'
+  - ENTER
+  - LEFT ALT
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - '&dtap_comm'
+  - '&dtap_dot'
+  - '&dtap_slash'
+  - {t: ESCAPE, h: RSHFT}
+  - CAPSLOCK
+  - LGUI
+  - {t: art, h: toggle}
+  - LCTRL
+  - SPACE
+  - {t: ENTER, h: alt}
+  - BACKSPACE
+  - SPACE
+  - RIGHT SHIFT
+  - RALT
+  - '&tap_l4_l5'
+  - MENU
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  art:
+  - Ctl+ LALT
+  - ESC
+  - Ctl+ D
+  - LCTRL
+  - LSHFT
+  - P
+  - ''
+  - ''
+  - KP NUMLOCK
+  - KP DIVIDE
+  - KP MULTIPLY
+  - KP MINUS
+  - SPACE
+  - TAB
+  - F
+  - E
+  - Z
+  - C
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - KP PLUS
+  - LALT
+  - Y
+  - D
+  - Ctl+ Z
+  - F2
+  - T
+  - ''
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '&dtap_del'
+  - L
+  - U
+  - W
+  - X
+  - H
+  - LALT
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - KP ENTER
+  - HOME
+  - KP 5
   - {t: ▽, type: trans}
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
-  - (
-  - )
-  - '|'
+  - art_duo
+  - SPACE
+  - art_duo
   - {t: ▽, type: trans}
-  - '='
-  - '-'
-  - +
-  - '{'
-  - '}'
-  - '['
+  - {t: ▽, type: trans}
+  - ''
+  - KP 0
+  - KP DOT
+  - '4'
   - ']'
-  - ;
-  - ':'
-  - \
+  - Ctl+ Y
+  - '['
+  - Ctl+ Z
+  art_duo:
+  - '4'
+  - '5'
+  - Ctl+ A
+  - Ctl+ C
+  - Ctl+ V
+  - F7
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '3'
+  - F6
+  - F1
+  - J
+  - G
+  - Q
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '2'
+  - F8
+  - N
+  - Ctl+ Y
+  - .
+  - A
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - M
+  - Ctl+ S
+  - V
+  - B
+  - '1'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -61,138 +188,213 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
-  raise:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - INS
-  - PSCRN
-  - CMENU
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PG UP
-  - {t: ▽, type: trans}
+  - ''
+  - RIGHT
+  - UP ARROW
+  - LEFT
+  - DOWN
+  alt:
+  - ESC
+  - ESC
+  - '&macro_shotapple'
+  - Ctl+ C
+  - Ctl+ Z
+  - Ctl+ V
+  - ''
+  - ''
+  - KP NUM
+  - KP DIVIDE
+  - KP MULTIPLY
+  - KP MINUS
+  - TAB
+  - ESC
+  - Ctl+ LEFT
   - UP
-  - {t: ▽, type: trans}
-  - '0'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - LALT
+  - Ctl+ RIGHT
+  - HOME
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - KP PLUS
+  - CAPS
   - LCTRL
-  - LSHFT
-  - {t: ▽, type: trans}
-  - CLCK
-  - PG DN
   - LEFT
   - DOWN
   - RIGHT
-  - DEL
-  - BSPC
-  - {t: ▽, type: trans}
-  - UNDO
-  - CUT
-  - COPY
-  - PASTE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - A
-  - B
-  - C
-  - D
-  - E
-  adjust:
-  - BT CLR
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
+  - END
   - ''
   - ''
+  - '4'
+  - '5'
+  - '6'
+  - '&dtap_del'
+  - ''
+  - LSHFT
+  - PREV
+  - PP
+  - NEXT
+  - APP
   - ''
   - ''
+  - '1'
+  - '2'
+  - '3'
+  - KP ENTER
+  - MUTE
   - ''
-  - ''
-  - EP TOG
-  - RGB HUD
-  - RGB HUI
-  - RGB SAD
-  - RGB SAI
-  - RGB EFF
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB BRD
-  - RGB BRI
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - RGB TOG
   - ''
   - ''
   - ''
   - {type: held}
   - ''
+  - {t: default, h: toggle}
   - ''
-  - {type: held}
+  - '0'
+  - .
+  - CAPS
+  - Alt+ RIGHT
+  - PG UP
+  - Alt+ LEFT
+  - PG DN
+  fnx:
+  - F13
+  - F14
+  - F15
+  - F1
+  - F2
+  - F3
   - ''
   - ''
   - ''
-  - A
-  - B
-  - C
-  - D
-  - E
+  - ''
+  - ''
+  - ''
+  - F16
+  - F17
+  - F18
+  - F4
+  - F5
+  - F6
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F19
+  - F20
+  - F21
+  - F7
+  - F8
+  - F9
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - F22
+  - F23
+  - F24
+  - F10
+  - F11
+  - F12
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  left_numpad:
+  - ''
+  - ''
+  - KP NUMLOCK
+  - KP DIVIDE
+  - KP MULTIPLY
+  - KP MINUS
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '7'
+  - '8'
+  - '9'
+  - KP PLUS
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '4'
+  - '5'
+  - '6'
+  - '&dtap_del'
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '1'
+  - '2'
+  - '3'
+  - KP ENTER
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - '0'
+  - KP DOT
+  - KP EQUAL
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - {t: default, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+combos:
+- p: [54, 55]
+  k: RIGHT CONTROL
+- p: [53, 54]
+  k: DELETE
+- p: [51, 52]
+  k: BACKSPACE
+- p: [3, 4]
+  k: Ctl+ Y
