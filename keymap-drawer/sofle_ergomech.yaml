@@ -197,7 +197,7 @@ layers:
   alt:
   - ESC
   - ESC
-  - '&macro_shotapple'
+  - Sft+Ctl+ 3
   - Ctl+ C
   - Ctl+ Z
   - Ctl+ V
@@ -236,7 +236,7 @@ layers:
   - PREV
   - PLAY PAUSE
   - NEXT
-  - APP
+  - '&ipad_slideover'
   - ''
   - ''
   - KP 1
