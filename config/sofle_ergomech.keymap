@@ -22,7 +22,7 @@
 
         rsft_rspc_rctl {
             bindings = <&kp RIGHT_CONTROL>;
-            key-positions = <54 55>;
+            key-positions = <55 56>;
         };
 
         lctl_bspc {
@@ -136,8 +136,8 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&dtap_esc_bkquote  &kp N1        &kp N2  &kp N3     &kp N4     &kp N5       &kp N6         &kp N7     &kp N8           &kp N9     &kp N0       &dtap_plus
-&kp TAB            &kp Q         &kp W   &kp E      &kp R      &kp T        &kp Y          &kp U      &kp I            &kp O      &kp P        &dtap_minus
+&dtap_esc_bkquote  &kp N1        &kp N2  &kp N3     &kp N4     &kp N5       &kp N6         &kp N7     &kp N8           &kp N9     &kp N0       &dtap_minus
+&kp TAB            &kp Q         &kp W   &kp E      &kp R      &kp T        &kp Y          &kp U      &kp I            &kp O      &kp P        &dtap_plus
 &kp LEFT_SHIFT     &kp A         &kp S   &kp D      &kp F      &kp G        &kp H          &kp J      &kp K            &kp L      &dtap_quote  &kp ENTER
 &kp LEFT_ALT       &kp Z         &kp X   &kp C      &kp V      &kp B        &kp N          &kp M      &dtap_comm       &dtap_dot  &dtap_slash  &mt RSHFT ESCAPE
 &kp LEFT_GUI       &kp CAPSLOCK  &tog 1  &kp LCTRL  &kp SPACE  &lt 3 ENTER  &kp BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT  &kp RALT   &tap_l4_l5
