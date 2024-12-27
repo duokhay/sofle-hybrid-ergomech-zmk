@@ -11,7 +11,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - '&dtap_plus'
+  - '&dtap_minus'
   - TAB
   - Q
   - W
@@ -23,7 +23,7 @@ layers:
   - I
   - O
   - P
-  - '&dtap_minus'
+  - '&dtap_plus'
   - LEFT SHIFT
   - A
   - S
@@ -390,7 +390,7 @@ layers:
   - ''
   - ''
 combos:
-- p: [54, 55]
+- p: [55, 56]
   k: RIGHT CONTROL
 - p: [51, 52]
   k: BACKSPACE
