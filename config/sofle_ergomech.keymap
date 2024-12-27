@@ -185,12 +185,12 @@
             //                |      |       |       |      |      |  |      |      |      |       |      |
 
             bindings = <
-&kp N4  &kp N5     &kp LC(A)  &kp LC(C)  &kp LC(V)       &kp F7  &trans  &trans     &trans        &trans    &trans    &trans
-&kp N3  &kp F6     &kp F1     &kp J      &kp G           &kp Q   &trans  &trans     &trans        &trans    &trans    &trans
-&kp N2  &kp F8     &kp N      &kp LC(Y)  &kp LS(KP_DOT)  &kp A   &trans  &trans     &trans        &trans    &trans    &trans
-&kp M   &kp LC(S)  &kp V      &kp B      &kp N1          &trans  &trans  &trans     &trans        &trans    &trans    &trans
-&trans  &trans     &trans     &trans     &trans          &trans  &trans  &trans     &trans        &trans    &trans
-                                                                 &none   &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
+&kp N4  &kp N5     &kp LC(A)  &kp LC(C)  &kp LC(V)   &kp F7  &trans  &trans     &trans        &trans    &trans    &trans
+&kp N3  &kp F6     &kp F1     &kp J      &kp G       &kp Q   &trans  &trans     &trans        &trans    &trans    &trans
+&kp N2  &kp F8     &kp N      &kp LC(Y)  &kp KP_DOT  &kp A   &trans  &trans     &trans        &trans    &trans    &trans
+&kp M   &kp LC(S)  &kp V      &kp B      &kp N1      &trans  &trans  &trans     &trans        &trans    &trans    &trans
+&trans  &trans     &trans     &trans     &trans      &trans  &trans  &trans     &trans        &trans    &trans
+                                                             &none   &kp RIGHT  &kp UP_ARROW  &kp LEFT  &kp DOWN
             >;
 
             sensor-bindings =
