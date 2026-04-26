@@ -54,7 +54,7 @@ layers:
   - {t: art, h: toggle}
   - LCTRL
   - SPACE
-  - {t: ENTER, h: alt}
+  - '&tap_ent_l3'
   - BACKSPACE
   - SPACE
   - RIGHT SHIFT
@@ -249,7 +249,7 @@ layers:
   - ''
   - {t: default, h: toggle}
   - BACKSPACE
-  - {type: held}
+  - {t: ▽, type: trans}
   - ''
   - {t: default, h: toggle}
   - ''
