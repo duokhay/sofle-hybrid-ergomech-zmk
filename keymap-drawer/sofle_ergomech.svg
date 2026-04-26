@@ -351,8 +351,8 @@ path.combo {
 <g transform="translate(370, 297) rotate(30.0)" class="key keypos-53">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
 <text x="0" y="0" class="key tap">ENTER</text>
-<a href="#alt">
-<text x="0" y="38" class="key hold layer-activator">alt</text>
+<a href="#ex">
+<text x="0" y="38" class="key hold layer-activator">ex</text>
 </a></g>
 <g transform="translate(471, 300) rotate(-30.0)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
@@ -985,8 +985,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 1562)" class="layer-alt">
-<text x="0" y="28" class="label" id="alt">alt:</text>
+<g transform="translate(30, 1562)" class="layer-ex">
+<text x="0" y="28" class="label" id="ex">ex:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 45)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>

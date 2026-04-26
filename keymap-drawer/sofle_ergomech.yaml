@@ -54,7 +54,7 @@ layers:
   - {t: art, h: toggle}
   - LCTRL
   - SPACE
-  - {t: ENTER, h: alt}
+  - {t: ENTER, h: ex}
   - BACKSPACE
   - SPACE
   - RIGHT SHIFT
@@ -195,7 +195,7 @@ layers:
   - UP ARROW
   - LEFT
   - DOWN
-  alt:
+  ex:
   - ESC
   - ESC
   - Sft+Ctl+3
