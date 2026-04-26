@@ -28,12 +28,116 @@
         };
     };	
 	
-	behaviors {
-        mousescroll: mousescroll {
+    combos {
+        compatible = "zmk,combos";
+
+        rsft_rspc_rctl {
+            bindings = <&kp RIGHT_CONTROL>;
+            key-positions = <55 56>;
+        };
+
+        lctl_bspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <51 52>;
+        };
+    };
+
+    macros {
+        ipad_slideover: ipad_slideover {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp CAPS>,
+                <&macro_tap>,
+                <&kp BACKSLASH>,
+                <&macro_release>;
+
+            label = "IPAD_SLIDEOVER";
+        };
+    };
+
+    behaviors {
+
+		mousescroll: mousescroll {
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
 			tap-ms = <20>;
+        };
+
+        dtap_comm: dtap_comm {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_COMM";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp LEFT_BRACKET>;
+        };
+
+        dtap_dot: dtap_dot {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_DOT";
+            #binding-cells = <0>;
+            bindings = <&kp PERIOD>, <&kp RIGHT_BRACKET>;
+        };
+
+        dtap_plus: dtap_plus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_PLUS";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp KP_MULTIPLY>;
+        };
+
+        dtap_minus: dtap_minus {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_MINUS";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp SLASH>;
+        };
+
+        dtap_slash: dtap_slash {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_SLASH";
+            #binding-cells = <0>;
+            bindings = <&kp SLASH>, <&kp BACKSLASH>;
+        };
+
+        dtap_quote: dtap_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp SINGLE_QUOTE>, <&kp SEMICOLON>;
+        };
+
+        dtap_del: dtap_del {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_DEL";
+            #binding-cells = <0>;
+            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+            tapping-term-ms = <150>;
+        };
+
+        tap_l4_l5: tap_l4_l5 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_L4_L5";
+            #binding-cells = <0>;
+            bindings = <&tog 4>, <&tog 5>;
+        };
+
+        dtap_esc_bkquote: dtap_esc_bkquote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DTAP_ESC_BKQUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp ESCAPE>;
+        };
+
+        tap_ent_l3: tap_ent_l3 {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_ENT_L3";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER>, <&mo 3>;
+
+            tapping-term-ms = <150>;
         };
     };
 
