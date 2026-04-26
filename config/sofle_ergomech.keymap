@@ -159,7 +159,7 @@
 &kp TAB            &kp Q         &kp W   &kp E      &kp R      &kp T        &kp Y          &kp U      &kp I            &kp O      &kp P        &dtap_plus
 &kp LEFT_SHIFT     &kp A         &kp S   &kp D      &kp F      &kp G        &kp H          &kp J      &kp K            &kp L      &dtap_quote  &kp ENTER
 &kp LEFT_ALT       &kp Z         &kp X   &kp C      &kp V      &kp B        &kp N          &kp M      &dtap_comm       &dtap_dot  &dtap_slash  &mt RSHFT ESCAPE
-&kp LEFT_GUI       &kp CAPSLOCK  &tog 1  &kp LCTRL  &kp SPACE  &tap_ent_l3  &kp BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT  &kp RALT   &tap_l4_l5
+&kp LEFT_GUI       &kp CAPSLOCK  &tog 1  &kp LCTRL  &kp SPACE  &lt 3 ENTER  &kp BACKSPACE  &kp SPACE  &kp RIGHT_SHIFT  &kp RALT   &tap_l4_l5
                                                                             &kp CAPS       &kp RIGHT  &kp UP_ARROW     &kp LEFT   &kp DOWN
             >;
 
