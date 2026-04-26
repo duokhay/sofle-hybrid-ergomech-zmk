@@ -210,7 +210,7 @@
                 <&inc_dec_kp PG_UP PG_DN>;
         };
 
-        alt {
+        ex {
             // ----------------------------------------------------------------------------------------------------------------------------
             // | BTCLR  |  BT1    |  BT2    |   BT3   |   BT4   |   BT5   |                  |      |      |       |      |       |       |
             // | EXTPWR | RGB_HUD | RGB_HUI | RGB_SAD | RGB_SAI | RGB_EFF |                  |      |      |       |      |       |       |
@@ -218,7 +218,7 @@
             // |        |         |         |         |         |         | RGB_TOG | |      |      |      |       |      |       |       |
             //                    |         |         |         |         |         | |      |      |      |       |      |
 
-            label = "alt";
+            label = "ex";
             bindings = <
 &kp ESC     &kp ESC    &kp LS(LC(NUMBER_3))  &kp LC(C)         &kp LC(Z)      &kp LC(V)        &bt BT_PRV    &bt BT_NXT     &kp KP_NUM       &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_MINUS
 &kp TAB     &kp ESC    &kp LA(LEFT)          &kp UP            &kp LA(RIGHT)  &kp HOME         &bt BT_SEL 0  &bt BT_SEL 1   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS
