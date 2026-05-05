@@ -379,7 +379,7 @@ layers:
   - KP 0
   - KP DOT
   - KP EQUAL
-  - ''
+  - '&studio_unlock'
   - ''
   - {t: default, h: toggle}
   - ''
